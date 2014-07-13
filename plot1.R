@@ -12,7 +12,7 @@ plotData <- rawData[rawData$Date == "2007-02-01" | rawData$Date == "2007-02-02",
 print("Data Imported")
 
 ##Create png file
-png("plot1.png")
+png("plot1.png", height = 480, width = 480, units = "px")
 
 ##Create histogram
 with(plotData, hist(plotData$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power"))

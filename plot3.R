@@ -18,7 +18,7 @@ plotData <- cbind(plotData, dateTime)
 print("Data Imported")
 
 ##create png file
-png("plot3.png")
+png("plot3.png", height = 480, width = 480, units = "px")
 
 ##Create plot area
 with(plotData, plot(plotData$dateTime, plotData$Sub_metering_1, type = "n", xlab = NA, ylab = "Energy Sub Metering"))

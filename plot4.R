@@ -18,7 +18,7 @@ plotData <- cbind(plotData, dateTime)
 print("Data Imported")
 
 ##create png file
-png("plot4.png")
+png("plot4.png", height = 480, width = 480, units = "px")
 
 ##Create 2x2 pane for plots
 par(mfrow = c(2,2))

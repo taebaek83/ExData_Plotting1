@@ -18,7 +18,7 @@ plotData <- cbind(plotData, dateTime)
 print("Data Imported")
 
 ##create png file
-png("plot2.png")
+png("plot2.png", height = 480, width = 480, units = "px")
 
 ##create line plot
 with(plotData, plot(plotData$dateTime, plotData$Global_active_power, type = "l", xlab = NA, ylab = "Global Active Power (kilowatts)"))
